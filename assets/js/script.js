@@ -21,20 +21,6 @@
   updateTime();
   setInterval(updateTime, 1000);
 
-  const btnDaftar = document.getElementById("btnDaftar");
-  const layanan = document.getElementById("layanan");
-
-    btnDaftar.addEventListener("click", () => {
-    if (layanan.classList.contains("hidden")) {
-      layanan.classList.remove("hidden");
-      setTimeout(() => layanan.classList.add("show"), 10);
-      btnDaftar.layananContent = "Batal";
-    } else {
-      layanan.classList.remove("show");
-      setTimeout(() => layanan.classList.add("hidden"), 300);
-      btnDaftar.textContent = "Daftar";
-    }
-  });
 
    btnsentuh.addEventListener("click", () => {
     if (text.classList.contains("hidden")) {
@@ -47,4 +33,18 @@
       btnsentuh.textContent = "Sentuh aku";
     }
   });
+
+  const cancel = document.getElementById("cancel");
+  const overlayc = document.getElementById("overlayc");
+  const closeB = document.getElementById("closeB");
+
+  cancel.addEventListener("click", () => {
+    overlayc.classList.add("show");
+  });
+
+  closeB.addEventListener("click", () => {
+    overlayc.classList.remove("show");
+  });
+
+
 
