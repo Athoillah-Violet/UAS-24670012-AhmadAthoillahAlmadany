@@ -87,15 +87,25 @@
             <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://www.facebook.com/bimandany.dany"><i class="bi bi-facebook p-2"></i></a>  
             <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://x.com/Almaa9999?t=S1qB9M9VGwUokOBlO0BzVg&s=08 "><i class="bi bi-twitter-x p-2"></i></a>
           </div> 
-          <div class="row justify-content-start mt-5">
-            <div class="col-2">
-              <button type="button" id="btnDaftar" class="btn btn-outline-warning">Daftar</button>
-               <p id="layanan" class="text hidden mt-2">Layanan Belum tersedia</p>
+         <div class="row justify-content-start mt-5">
+               <div class="col-2  mwconn">
+              <button type="button" id="cancel" class="btn btn-outline-warning Batal mb-3">Batal</button>
             </div>
-             <div class="col-4"><a href="services.html">
-              <button type="button" class="btn btn-warning">Masuk</button>   
-            </a>  
+            <div id="overlayc" class="overlay">
+                <div class="notif-box danger">
+                    <div class="iconC">X</div>
+                    <h4 class="text-dark">Peringatan</h4>
+                    <p class="text-dark">Anda Membatalkan Pesan!</p>
+                    <button id="closeB" class="btn btn-danger btn-sm mt-2">
+                    OK
+                    </button>
+                </div>                 
             </div>
+             <div class="col-2  mwconn"><a href="services.html">
+              <button type="button" class="btn btn-warning Kirim mb-3">Masuk</button>   
+              </a>  
+              </div>
+        
             </div>
         
     </div>
@@ -114,4 +124,5 @@
 
 
 </body>
+
 </html>
