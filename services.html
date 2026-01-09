@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Service~kan </title>
+    <link rel="shortcut icon" href="assets/img/tambahan.ico" type="image/x-icon">
+    <!-- Bostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bostrap icon  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <style>
+        body{
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+     </style>
+    </head>
+
+
+<body class="f bg-dark  text-light">
+<header class="navbar navbar-expand-lg bd-navbar sticky-top"> 
+<nav class="navbar navbar-expand-lg bg-warning  fixed-top shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand f" href="index.html">
+        <img src="assets/img/tambahan.png" alt="Logo" width="30" height="24" class="f d-inline-block align-text-top">
+    Layanan | Service~kan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header text-dark ">
+        <h5 class="offcanvas-title " style="color: #000000;" id="offcanvasNavbarLabel">Halaman</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="services.html">Layanan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Halaman
+            </a>
+            <ul class="dropdown-menu bg-warning dropdown-menu-light">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallary</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="contact.html">Kontak</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+<section>
+<div class="container ">  
+      <div class="row justify-content-center  ">
+          
+    <div class=" col text-center mto md-4"> 
+    
+    <h3 class="text-warning">Service~kan</h3>
+    <p>“Solusi Servis PC dan Laptop Terpercaya untuk Performa Maksimal dan Aktivitas Digital Tanpa Hambatan.”</p><hr>
+   
+     </div>
+     
+</div>
+<br><br>
+   <div class="row justify-content-center text-center mt-5"> 
+    <div class="hvr col-2  bg-secondary  rounded-3   bg-opacity-10  p-3 m-2 hover-box">   
+      <button class="btn"  onclick="showPage('home') ">
+       <h4> <i class="bi bi-chat-left-text text-warning border-secondary rounded-3 p-2 "></i></h4>
+      <h6 class="text-warning mb-3">Konsultasi</h6>
+      <p class="text-light">Menangani masalah anda denagn cepat dan terpercaya  
+    </p>
+      </button>
+    </div>
+   <div class="hvr col-2    bg-secondary  rounded-3   bg-opacity-10  p-3 m-2  hover-box">
+    <button class="btn" onclick="showPage('about')">
+   <h4><i class="bi bi-recycle text-warning border-secondary rounded-3 p-2 "></i></h4>
+      <h6 class="text-warning mb-3">Service</h6>
+      <p class="text-light">Memperbaikki seluruh masalah yang anda miliki </p>
+      </button>
+    </div>
+    <div class="hvr col-2  bg-secondary  rounded-3   bg-opacity-10  p-3 m-2  hover-box">
+      <button class="btn" onclick="showPage('contact')">
+     <h4><i class="bi bi-currency-dollar text-warning border-secondary rounded-3 p-2 "></i></h4>
+      <h6 class="text-warning mb-3">Beli Suku Cadang</h6>
+<p class="text-light">      Memperbaikki seluruh masalah yang anda miliki <p></button>
+    </div>
+     <hr class="pnd mt-4">
+  </div>
+ 
+</div>
+</section>
+
+<section>
+<div class="container mb-5 mt-4">  
+      <div class="row text-center justify-content-center mb-4 ">
+        <div class="col-7 bg-secondary text-center rounded-3   bg-opacity-10  p-3 m-2  ">
+          
+        <div id="home" class="page active">
+          <h2 class="text-warning">Konsultasi</h2>
+         
+        </div>
+      
+        <div id="about" class="page">
+          <h2 class="text-warning">Service Barang</h2>
+          <p >Kami melayani perbaikan PC dan laptop untuk berbagai masalah hardware maupun software dengan penanganan yang profesional dan teliti. Setiap proses servis dilakukan dengan mengutamakan kualitas, keamanan perangkat, dan hasil yang optimal.</p>
+        
+        </div>
+
+        <div id="contact" class="page">
+          <h2 class="text-warning">Beli Suku Cadang</h2>
+          <p >Kami menyediakan suku cadang PC dan laptop berkualitas untuk mendukung proses perbaikan dan peningkatan performa perangkat. Setiap komponen dipilih dengan cermat agar kompatibel, tahan lama, dan memberikan kinerja terbaik.</p>
+         
+        </div>
+         <p >Layanan konsultasi kami membantu Anda memahami permasalahan PC atau laptop secara jelas sebelum melakukan perbaikan. Kami memberikan saran teknis yang jujur dan tepat agar Anda dapat mengambil keputusan terbaik sesuai kebutuhan dan anggaran.</p>
+       <button id="btnlayanan" class="btn text-decoration-none text-light  border-secondary border ">Masuk Layana</button>
+          <p id="textlayanan" class="text hidden mt-2">Layanan Belum tersedia</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</section>
+
+
+ <!-- Bosttrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!-- dari inport -->
+      <script src="assets/js/scriptservic.js"></script>
+
+
+
+
+
+
+  </div>
+</body>
+</html>

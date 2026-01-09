@@ -1,0 +1,196 @@
+/* body {
+    background-color: aqua;
+} */
+.isi{
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+.isi .row .col img {
+    max-height:  550px;
+    height: 100% ;
+    width: auto;
+    min-width: 100px;
+}
+.mto {
+    margin-top: 6rem;
+}
+h1 {
+    min-width: 400px;
+}
+.smp{
+    min-width: 400px;
+    
+}
+.hvr{
+    min-width: 200px;}
+/* .icon:hover {
+    color: rgb(255, 208, 0);
+} */
+ .btt {
+    min-width: 50px;
+ }
+.pnd{
+  max-width: 800px;
+  
+}
+.mwcon{
+  min-width: 150px;
+}
+.mwconn{
+  min-width: 70px;
+}
+.min{
+  min-width: 300px;
+  min-height: 60px;
+}
+ .greeting {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+.col img .fii{
+  max-height: 10px;
+}
+.clock {
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+}
+
+.text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.page {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page.active {
+  display: block;
+  opacity: 1;
+}
+
+.hover-box {
+  color: #ffffff;
+  border: 1px solid #313131;
+  transition: all 0.3s ease;
+}
+
+.hover-box:hover {
+  border-color: #fdad0d;
+  color: chocolate;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.notif-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 300px;
+  transform: scale(0.7);
+  transition: 0.3s ease;
+}
+
+.overlay.show .notif-box {
+  transform: scale(1);
+}
+
+.notif-box.success {
+  border-top: 6px solid #198754;
+}
+.notif-box.danger {
+  border-top: 6px solid #660000;
+}
+.notif-box .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  background: #198754;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-box .iconC {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  background: #ff0000;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animasi halus */
+.mb-3 label,
+.mb-3 input,
+.mb-3 textarea {
+  transition: all 0.3s ease;
+}
+
+/* SAAT INPUT / TEXTAREA DIKLIK */
+.mb-3:focus-within label {
+  color: #ffc107;               /* warna warning Bootstrap */
+  font-weight: 600;
+}
+
+/* Input focus (biar nyatu sama label) */
+.mb-3:focus-within input,
+.mb-3:focus-within textarea {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255,193,7,.25);
+}
+.mb-3:focus-within label {
+  transform: translateY(-3px);
+}

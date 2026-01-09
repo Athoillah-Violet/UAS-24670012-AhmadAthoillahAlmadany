@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Service~kan </title>
+    <link rel="shortcut icon" href="assets/img/tambahan.ico" type="image/x-icon">
+    <!-- Bostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bostrap icon  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+
+     <style>
+        body{
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+     </style>
+
+
+
+
+    </head>
+
+
+<body class="f bg-dark  text-light-emphasis">
+<header class="navbar navbar-expand-lg bd-navbar sticky-top"> 
+<nav class="navbar navbar-expand-lg bg-warning  fixed-top shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand f" href="index.html">
+        <img src="assets/img/tambahan.png" alt="Logo" width="30" height="24" class="f d-inline-block align-text-top">
+    Home | Service~kan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header text-dark ">
+        <h5 class="offcanvas-title " style="color: #000000;" id="offcanvasNavbarLabel">Halaman</h5>
+        <button type="button" class="btnsentuh-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="services.html">Layanan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Halaman
+            </a>
+            <ul class="dropdown-menu bg-warning dropdown-menu-light">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallary</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="contact.html">Kontak</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<section>
+<div class="container  text-light isi">
+  <div class="row justify-content-center  ">
+    <div class="col text-start mto">
+      <p>
+        <h2 id="greeting" class="greeting"></h2>
+        <p id="clock" class="clock"></p>
+      <p><h5>Welcome to</h5></p>
+      <h1 class="text-warning ">
+        PC / Laptop Service
+        </h1>
+        <button id="btnsentuh" class="btn text-decoration-none text-light">Sentuh aku</button>
+          <p id="text" class="text hidden">Selamat datang di layanan servis PC dan Laptop kami! Kami siap membantu mengatasi berbagai masalah perangkat Anda, mulai dari laptop lemot, error sistem, hingga kerusakan hardware. Dengan pelayanan cepat, terpercaya, dan harga terjangkau, kami berkomitmen memberikan solusi terbaik agar PC dan laptop Anda kembali optimal untuk belajar, bekerja, dan aktivitas harian. Yuk, percayakan servis perangkat Anda kepada kami!</p>
+
+          <div class="menu  text-decoration-none fw-bold ">
+            <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://api.whatsapp.com/send/?phone=6285643322270&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp p-2"></i></a> 
+            <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://www.instagram.com/athok_09?igsh=MXJpbmVnbmJ5Nm5qNQ=="><i class="bi bi-instagram p-2"></i></a>
+            <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://www.facebook.com/bimandany.dany"><i class="bi bi-facebook p-2"></i></a>  
+            <a target="_blank" class="icon-link icon-link-hover p-2 text-light" href="https://x.com/Almaa9999?t=S1qB9M9VGwUokOBlO0BzVg&s=08 "><i class="bi bi-twitter-x p-2"></i></a>
+          </div> 
+          <div class="row justify-content-start mt-5">
+            <div class="col-2">
+              <button type="button" id="btnDaftar" class="btn btn-outline-warning">Daftar</button>
+               <p id="layanan" class="text hidden mt-2">Layanan Belum tersedia</p>
+            </div>
+             <div class="col-4"><a href="services.html">
+              <button type="button" class="btn btn-warning">Masuk</button>   
+            </a>  
+            </div>
+            </div>
+        
+    </div>
+    <div class="col text-center">
+      <img class="figure figure-img img-fluid rounded " src="assets/img/MASTER.png">
+      <p> Master Of Service </p>
+    </div>
+  </div>
+</div>
+</section>
+ <!-- Bosttrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!-- dari inport -->
+      <script src="assets/js/script.js"></script>
+
+
+
+</body>
+</html>
